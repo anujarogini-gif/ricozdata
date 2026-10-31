@@ -13,6 +13,7 @@ import {
   BarChart2,
   Users,
   Settings,
+  ClipboardList,
   ChevronLeft,
   LogOut,
   X
@@ -75,6 +76,7 @@ export default function Sidebar() {
     {
       group: 'Management',
       items: [
+        { name: 'Operations Tasks', path: '/operations-tasks', icon: ClipboardList },
         { name: 'Employees', path: '/users', icon: Users, permission: PERMISSIONS.USER_READ },
         { name: 'Settings', path: '/settings', icon: Settings }
       ]

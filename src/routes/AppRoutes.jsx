@@ -16,6 +16,7 @@ import Users from '../pages/Users';
 import Settings from '../pages/Settings';
 import Reports from '../pages/Reports';
 import DataSourceList from '../components/datasource/DataSourceList';
+import OperationsTasks from '../pages/OperationsTasks';
 import { PERMISSIONS } from '../constants/rbac';
 
 export default function AppRoutes() {
@@ -133,6 +134,12 @@ export default function AppRoutes() {
             <ProtectedRoute permission={PERMISSIONS.DASHBOARD_READ}>
               <Reports />
             </ProtectedRoute>
+          }
+        />
+         <Route
+           path="/operations-tasks"
+           element={
+             <OperationsTasks />
           }
         />
         <Route
