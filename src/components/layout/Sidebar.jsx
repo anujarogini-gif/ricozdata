@@ -15,7 +15,7 @@ import {
   Settings,
   ClipboardList,
   ChevronLeft,
-  LogOut,
+  LogOut, 
   X
 } from 'lucide-react';
 import { useApp } from '../../context/AppContext';
